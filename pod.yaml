@@ -6,8 +6,8 @@ spec:
   containers:
   - name: kaniko-demo
     image: gcr.io/kaniko-project/executor:latest
-    args: ["--context=git://github.com/agavitalis/kaniko-kubernetes.git",
-            "--destination=agavitalis/kaniko-demo:1.0.0",
+    args: ["--context=git://github.com/victoriahodieva/kaniko-kubernetes.git",
+            "--destination=mukarramhodieva/kaniko-demo:1.0.0",
             "--dockerfile=dockerfile"]
     volumeMounts:
       - name: kaniko-secret
